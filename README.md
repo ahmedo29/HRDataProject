@@ -193,5 +193,17 @@ Total Employees = SUM(HR_Data[Employee Count])
 The dashboard looks as below:
 ![Dashboard](assets/images/HR_Dashboard.png)
 
-# Data Validation
+# Visualisation
+## What did we learn?
 
+We discovered that:
+
+1. R&D is the department with the most attrition
+2. The age band with the most employees is 25 - 34
+3. Life Sciences is the education field with the most attrition
+4. The attrition rate for the organisation is 16.12%
+5. There has been a total of 1470 employees, and there is currently 1233 active employees
+6. The average age of employee is 37 years old
+7. The attrition count is 237
+
+The Human Resources department can use this dashboard to gather insights on attrition, based on education field, job department, gender, and the satisfaction rate per job title. They can use this information to make more informed decisions, and think of ways to decrease the attrition rate, and attract and retain talent. 
