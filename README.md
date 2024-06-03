@@ -1,5 +1,7 @@
 # Human Resource Data Project
 
+![Dashboard](assets/images/HR_Dashboard.png)
+
 # Objective
 
 * Key objectives for this project
@@ -161,3 +163,32 @@ WHERE active_employee = 0
 GROUP BY gender, age_band
 ORDER BY age_band DESC;
 ```
+# Data Transformation
+## Power Query
+I used Power Query to transform the data to make it suitable for analysis and to create an interactive dashboard.
+
+1. I firstly made each column the correct data type which is suitable for them
+2. I added a conditional column which extracted the attrition to state 'Yes' or 'No', which made the data and visualisation easier to read and understand
+3. I added a conditional column which made the sorted the age groups, and made them more suitable for visualisation
+
+## DAX Measures
+### Active Employees
+```sql
+Active Employees = SUM(HR_Data[CF_current Employee])
+```
+### Attrition Rate
+```sql
+Attrition Rate = SUM(HR_Data[Attrition Count])/[Total Employees]
+```
+### Average Age
+```sql
+Average Age = ROUND(AVERAGE(HR_Data[Age]), 0)
+```
+### Total Employees
+```sql
+Total Employees = SUM(HR_Data[Employee Count])
+```
+# Visualisation
+## Results
+The dashboard looks as below:
+![Dashboard](assets/images/HR_Dashboard.png)
