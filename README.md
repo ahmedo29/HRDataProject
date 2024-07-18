@@ -193,7 +193,7 @@ Total Employees = SUM(HR_Data[Employee Count])
 The dashboard looks as below:
 ![Dashboard](assets/images/HR_Dashboard.png)
 
-# Visualisation
+# Discovery
 ## What did we learn?
 
 We discovered that:
